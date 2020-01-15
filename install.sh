@@ -1,4 +1,4 @@
-$!/bin/bash
+#!/bin/bash
 
 Activity="`pwd`/vpnAuto.sh > `pwd`/vpnAuto.log 2>&1"
 Job="@reboot sleep 60 && $Activity"
