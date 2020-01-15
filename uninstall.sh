@@ -4,4 +4,4 @@ Activity="`pwd`/vpnAuto.sh > `pwd`/vpnAuto.log 2>&1"
 Job="@reboot sleep 60 && $Activity"
 
 (crontab -l | grep -v -F "$Activity") | crontab -
-ehco "Finished! please restart your system"
+echo "Finished! please restart your system"
