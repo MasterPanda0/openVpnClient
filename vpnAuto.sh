@@ -10,7 +10,6 @@ while [[ 1 ]]; do
 	if [[ $? == 0 ]]; then
 		echo "openvpn is not connected!"
 		echo "Reconnecting!"
-		#echo your_sudo_password | sudo -S openvpn --config /PATH_TO_CONFIGFILE/config.ovpn
 		sudo -S openvpn --config /PATH_TO_CONFIGFILE/config.ovpn
 		sleep 6
 	fi
